@@ -21,6 +21,7 @@ import {
   Cpu,
   Phone
 } from 'lucide-react'
+import { drPaulBailo } from '../assets/logos'
 
 const values = [
   {
@@ -311,7 +312,7 @@ function About() {
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-br from-accent-300 to-primary-300 rounded-3xl blur-2xl opacity-40" />
                 <img
-                  src="https://pipconsultinggroup.com/wp-content/uploads/2021/11/9F2A9905-1-1-1-scaled.jpg"
+                  src={drPaulBailo}
                   alt="Dr. Paul J. Bailo, Ph.D."
                   className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-xl object-cover object-top"
                 />

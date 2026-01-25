@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { Lock, Mail, Eye, EyeOff, Loader2 } from 'lucide-react'
 import toast from 'react-hot-toast'
 import { useAuth } from '../../contexts/AuthContext'
+import { pipLogoFull } from '../../assets/logos'
 
 function Login() {
   const [email, setEmail] = useState('')
@@ -50,7 +51,7 @@ function Login() {
           {/* Logo */}
           <div className="text-center mb-8">
             <img 
-              src="https://pipconsultinggroup.com/wp-content/uploads/2021/11/PIP-Consulting-logo-080321_final-blue-Group-tag-copy.png"
+              src={pipLogoFull}
               alt="PIP Consulting Group"
               className="h-14 w-auto mx-auto mb-4"
             />

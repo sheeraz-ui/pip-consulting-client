@@ -29,7 +29,7 @@ import {
   Workflow
 } from 'lucide-react'
 import { testimonialAPI } from '../utils/api'
-import { universityLogos, clientLogos } from '../assets/logos'
+import { universityLogos, clientLogos, drPaulBailo } from '../assets/logos'
 
 const stats = [
   { value: '500+', label: 'Leaders Coached', icon: Users },
@@ -971,7 +971,7 @@ function Home() {
                 transition={{ duration: 5, repeat: Infinity }}
               />
               <img
-                src="https://pipconsultinggroup.com/wp-content/uploads/2021/11/9F2A9905-1-1-1-scaled.jpg"
+                src={drPaulBailo}
                 alt="Dr. Paul J. Bailo, Ph.D."
                 className="relative rounded-2xl shadow-xl object-cover"
               />

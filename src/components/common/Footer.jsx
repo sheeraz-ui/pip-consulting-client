@@ -8,11 +8,11 @@ import {
   Instagram, 
   Mail, 
   Phone, 
-  MapPin,
   ArrowRight,
   Send
 } from 'lucide-react'
 import toast from 'react-hot-toast'
+import { pipLogoFull } from '../../assets/logos'
 
 const footerLinks = {
   company: [
@@ -104,7 +104,7 @@ function Footer() {
           <div className="lg:col-span-2">
             <Link to="/" className="inline-block mb-6">
               <img 
-                src="https://pipconsultinggroup.com/wp-content/uploads/2021/11/PIP-Consulting-logo-080321_final-blue-Group-tag-copy.png"
+                src={pipLogoFull}
                 alt="PIP Consulting Group"
                 className="h-12 w-auto brightness-0 invert"
               />
@@ -180,11 +180,7 @@ function Footer() {
 
         {/* Contact Info */}
         <div className="mt-12 pt-8 border-t border-primary-800">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="flex items-center gap-3 text-primary-300">
-              <MapPin className="w-5 h-5 text-accent-500" />
-              <span>World Headquarters, Trumbull, Connecticut, USA</span>
-            </div>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8">
             <div className="flex items-center gap-3 text-primary-300">
               <Phone className="w-5 h-5 text-accent-500" />
               <a href="tel:+12032581746" className="hover:text-accent-400 transition-colors">

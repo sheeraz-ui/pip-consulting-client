@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, ChevronDown } from 'lucide-react'
+import { pipLogoFull } from '../../assets/logos'
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -43,7 +44,7 @@ function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
-              src="https://pipconsultinggroup.com/wp-content/uploads/2021/11/PIP-Consulting-logo-080321_final-blue-Group-tag-copy.png"
+              src={pipLogoFull}
               alt="PIP Consulting Group"
               className={`h-12 w-auto ${isScrolled || !isHomePage ? '' : 'brightness-0 invert'}`}
             />

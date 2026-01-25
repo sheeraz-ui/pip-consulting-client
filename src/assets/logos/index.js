@@ -1,6 +1,8 @@
 // PIP Consulting Group Logos
 import pipLogoImg from './pip-logo.png'
+import pipLogoFullImg from './PIP-Consulting-logo-080321_final-blue-Group-tag-copy.png'
 import faviconImg from './favicon.png'
+import drPaulBailoImg from './9F2A9905-1-1-1-scaled.jpg'
 
 // University Logos
 import harvardLogoImg from './universities/harvard.svg'
@@ -16,7 +18,9 @@ import cornellLogoImg from './universities/cornell.svg'
 
 // Export individual logos
 export const pipLogo = pipLogoImg
+export const pipLogoFull = pipLogoFullImg
 export const favicon = faviconImg
+export const drPaulBailo = drPaulBailoImg
 export const harvardLogo = harvardLogoImg
 export const columbiaLogo = columbiaLogoImg
 export const nyuLogo = nyuLogoImg

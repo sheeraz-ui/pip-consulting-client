@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { motion } from 'framer-motion'
 import { 
-  MapPin, 
   Phone, 
   Mail, 
   Clock,
@@ -16,8 +15,6 @@ import { contactAPI } from '../utils/api'
 const officeLocations = [
   {
     city: 'World Headquarters',
-    address: 'Trumbull',
-    state: 'Connecticut, USA',
     phone: '+1 (203) 258-1746',
     email: 'info@pipconsultinggroup.com'
   }
@@ -270,17 +267,6 @@ function Contact() {
 
               <div className="space-y-4">
                 <div className="flex items-start gap-4 p-4 bg-primary-50 rounded-lg">
-                  <MapPin className="w-6 h-6 text-accent-500 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-semibold text-primary-900">Address</h4>
-                    <p className="text-primary-600">
-                      World Headquarters<br />
-                      Trumbull, Connecticut, USA
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4 p-4 bg-primary-50 rounded-lg">
                   <Phone className="w-6 h-6 text-accent-500 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-primary-900">Phone</h4>
@@ -365,31 +351,16 @@ function Contact() {
               {/* Header with icon */}
               <div className="flex items-center gap-4 mb-8">
                 <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-accent-500 to-orange-500 flex items-center justify-center shadow-lg">
-                  <MapPin className="w-8 h-8 text-white" />
+                  <Phone className="w-8 h-8 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-white">World Headquarters</h3>
+                  <h3 className="text-2xl font-bold text-white">Contact Us</h3>
                   <p className="text-primary-300">PIP Consulting Group</p>
                 </div>
               </div>
 
               {/* Contact Details */}
               <div className="space-y-6">
-                {/* Address */}
-                <motion.div 
-                  whileHover={{ x: 5 }}
-                  className="flex items-start gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300"
-                >
-                  <div className="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-blue-400" />
-                  </div>
-                  <div>
-                    <p className="text-primary-300 text-sm font-medium mb-1">Address</p>
-                    <p className="text-white text-lg font-semibold">Trumbull, Connecticut</p>
-                    <p className="text-primary-200">United States of America</p>
-                  </div>
-                </motion.div>
-
                 {/* Phone */}
                 <motion.a 
                   href="tel:+12032581746"
@@ -469,8 +440,8 @@ function Contact() {
               {/* Overlay badge */}
               <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm rounded-lg px-4 py-2 shadow-lg">
                 <p className="text-primary-900 font-semibold text-sm flex items-center gap-2">
-                  <MapPin className="w-4 h-4 text-accent-500" />
-                  Trumbull, CT
+                  <Phone className="w-4 h-4 text-accent-500" />
+                  PIP Consulting Group
                 </p>
               </div>
             </motion.div>
