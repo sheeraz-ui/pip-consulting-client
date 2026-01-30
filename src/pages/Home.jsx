@@ -66,9 +66,7 @@ const upcomingPrograms = [
   { title: 'Executive Database Analytics', icon: BarChart3, gradient: 'from-indigo-500 to-blue-600', desc: 'Data-driven decision making' }
 ]
 
-// University names for fallback (logos imported from assets)
 
-// Client logos imported from assets (clientLogos from '../assets/logos')
 
 // AI Orb with pulsing glow
 const AIOrb = ({ className, delay = 0 }) => (
